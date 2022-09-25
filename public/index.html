@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/images/favicon-32x32.png"
+    />
+
+    <script
+      defer
+      src="https://kit.fontawesome.com/8a4da680c8.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <script defer src="./script.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Frontend Mentor | Notifications page</title>
+  </head>
+  <body>
+    <main>
+      <div class="container py-6">
+        <div
+          class="max-w-sm mx-auto mb-7 flex justify-between | sm:min-w-md sm:mx-auto"
+        >
+          <div class="flex items-center gap-3">
+            <h1 class="text-xl font-bold text-nc-7">Notifications</h1>
+            <p class="bg-pc-2 text-nc-1 text-xl font-bold py-1 px-3 rounded-lg">
+              3
+            </p>
+          </div>
+          <button
+            class="notification-toggle | text-nc-6 font-medium hover:text-pc-2 duration-200 ease-in cursor-pointer"
+          >
+            Mark all as read
+          </button>
+        </div>
+
+        <div
+          class="max-w-sm mx-auto flex flex-col gap-6 | sm:min-w-md sm:mx-auto"
+        >
+          <div class="notification-item">
+            <div>
+              <img
+                src="./assets/images/avatar-mark-webber.webp"
+                alt="mark Webber"
+              />
+            </div>
+            <div>
+              <p>
+                <span class="username"> Mark Webber </span>
+                reacted to your recent post
+                <span class="font-bold text-pc-2 cursor-pointer"
+                  >My first tournament today!</span
+                >
+                <i class="fa-solid fa-circle-small"></i>
+              </p>
+              <p>1m ago</p>
+            </div>
+          </div>
+
+          <div class="notification-item">
+            <div>
+              <img
+                src="./assets/images/avatar-angela-gray.webp"
+                alt="angela gray"
+              />
+            </div>
+            <div>
+              <p>
+                <span class="username"> Angela Gray </span>
+                Followed you
+                <i class="fa-solid fa-circle-small"></i>
+              </p>
+              <p>5m ago</p>
+            </div>
+          </div>
+
+          <div class="notification-item">
+            <div>
+              <img
+                src="./assets/images/avatar-jacob-thompson.webp"
+                alt="mark Webber"
+              />
+            </div>
+            <div>
+              <p>
+                <span class="username"> Jacob Thompson </span>
+                has joined your group
+                <span class="font-bold text-pc-2 cursor-pointer"
+                  >Chess Club!</span
+                >
+                <i class="fa-solid fa-circle-small"></i>
+              </p>
+              <p>1 day ago</p>
+            </div>
+          </div>
+
+          <div class="notification-item flex-col bg-def sm:items-start">
+            <div class="flex items-center gap-3">
+              <div>
+                <img
+                  src="./assets/images/avatar-rizky-hasanuddin.webp"
+                  alt="mark Webber"
+                />
+              </div>
+              <div>
+                <p>
+                  <span class="username"> Rizky Hasanuddin </span>
+                  sent you a private message
+                  <i class="fa-solid fa-circle-small hide"></i>
+                </p>
+                <p>5 days ago</p>
+              </div>
+            </div>
+            <p
+              class="ml-12 p-4 border-2 border-nc-6/40 rounded-lg cursor-pointer ease-in duration-300 hover:bg-nc-2"
+            >
+              Hello, thanks for setting up the Chess Club. I've been a member
+              for a few weeks now and I'm already having lots of fun and
+              improving my game.
+            </p>
+          </div>
+
+          <div class="notification-item bg-def">
+            <div>
+              <img
+                src="./assets/images/avatar-kimberly-smith.webp"
+                alt="mark Webber"
+              />
+            </div>
+            <div>
+              <p>
+                <span class="username"> Kimberly Smith </span>
+                commented on your picture
+                <i class="fa-solid fa-circle-small hide"></i>
+              </p>
+              <p>1 week ago</p>
+            </div>
+          </div>
+
+          <div class="notification-item bg-def">
+            <div>
+              <img
+                src="./assets/images/avatar-nathan-peterson.webp"
+                alt="mark Webber"
+              />
+            </div>
+            <div>
+              <p>
+                <span class="username"> Nathan Peterson </span>
+                reacted to your recent post
+                <span class="font-bold text-nc-6"
+                  >5 end-game strategies to increase your win rate</span
+                >
+                <i class="fa-solid fa-circle-small hide"></i>
+              </p>
+              <p>2 weeks ago</p>
+            </div>
+          </div>
+
+          <div class="notification-item bg-def">
+            <div>
+              <img
+                src="./assets/images/avatar-anna-kim.webp"
+                alt="mark Webber"
+              />
+            </div>
+            <div>
+              <p>
+                <span class="username"> Anna Kim </span>
+                left the group
+                <span class="text-pc-2 font-bold cursor-pointer"
+                  >Chess Club</span
+                >
+                <i class="fa-solid fa-circle-small hide"></i>
+              </p>
+              <p>2 weeks ago</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

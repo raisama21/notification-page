@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Plus Jakarta Sans", sans-serif;
+  }
+
+  p {
+    @apply font-medium text-nc-5;
+  }
+}
+
+@layer components {
+  .notification-item {
+    @apply p-4 flex items-center gap-3 bg-nc-2 rounded-xl;
+  }
+
+  .fa-circle-small {
+    @apply h-2 w-2 bg-pc-1/80 rounded-full;
+  }
+
+  img {
+    @apply max-w-img sm:max-w-img2;
+  }
+
+  .username {
+    @apply font-bold text-nc-7 hover:text-pc-2 duration-200 ease-in cursor-pointer;
+  }
+}
+
+.hide {
+  display: none;
+}
+
+.bg-def {
+  background-color: hsl(0, 0%, 100%);
+}
